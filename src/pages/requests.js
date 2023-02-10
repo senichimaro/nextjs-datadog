@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
+import Navigation from "../components/Navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,30 +29,7 @@ export default function Home() {
             Welcome to&nbsp;
             <code className={styles.code}>src/pages/requests.js</code>
           </p>
-          <p>
-            Go to&nbsp;
-            <code className={styles.code}>
-              <a
-                style={{ display: "unset" }}
-                href="/"
-                rel="noopener noreferrer"
-              >
-                Home
-              </a>
-            </code>
-          </p>
-          <p>
-            Go to&nbsp;
-            <code className={styles.code}>
-              <a
-                style={{ display: "unset" }}
-                href="/about"
-                rel="noopener noreferrer"
-              >
-                About
-              </a>
-            </code>
-          </p>
+          <Navigation />
         </div>
 
         <div className={styles.center}>

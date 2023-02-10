@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import Navigation from "../components/Navigation";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,30 +23,7 @@ export default function Home() {
             Welcome to&nbsp;
             <code className={styles.code}>src/pages/about.js</code>
           </p>
-          <p>
-            Go to&nbsp;
-            <code className={styles.code}>
-            <a
-              style={{display: "unset"}}
-              href="/"
-              rel="noopener noreferrer"
-            >
-              Home
-            </a>
-          </code>
-          </p>
-          <p>
-            Go to&nbsp;
-            <code className={styles.code}>
-            <a
-              style={{display: "unset"}}
-              href="/requests"
-              rel="noopener noreferrer"
-            >
-              Requests
-            </a>
-          </code>
-          </p>
+          <Navigation />
         </div>
 
         <div className={styles.center}>
